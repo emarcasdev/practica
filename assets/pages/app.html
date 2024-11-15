@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/app.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Logo de la empresa" />
+        </div>
+        <div class="search-container">
+            <input type="text" class="filterName" placeholder="Buscar cliente..." />
+            <button type="button" id="search">
+                <img id="icon-search" src="../icons/search.png" alt="Icono de lupa para la busqueda de usuarios"
+                    width="27" height="27" />
+            </button>
+            <button type="button" id="add">
+                <img id="icon-add" src="../icons/add.png" alt="Icono para añadir usuarios" width="30" height="30" />
+            </button>
+            <button type="button" id="logOut">
+                <a href="../../index.html"><img id="icon-logout" src="../icons/log-out.png"
+                        alt="Icono de salida para abadonar el programa" width="30" height="30" /></a>
+            </button>
+        </div>
+    </nav>
+    <section class="card-container"></section>
+
+    <div id="addUserModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Añadir Nuevo Usuario</h2>
+            <form id="addUserForm">
+                <label for="addUserName">Nombre:</label>
+                <input type="text" id="addUserName" name="name" required>
+    
+                <label for="addUserDni">DNI:</label>
+                <input type="text" id="addUserDni" name="dni" required>
+    
+                <label for="addUserJob">Profesión:</label>
+                <input type="text" id="addUserJob" name="job" required>
+    
+                <label for="addUserDir">Dirección:</label>
+                <input type="text" id="addUserDir" name="dir" required>
+    
+                <label for="addUserTlfn">Teléfono:</label>
+                <input type="text" id="addUserTlfn" name="tlfn" required>
+    
+                <button type="submit" class="bt-modal">Añadir Usuario</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Usuario</h2>
+            <form id="editForm">
+                <label for="editName">Nombre:</label>
+                <input type="text" id="editName" name="name" required />
+    
+                <label for="editDni">DNI:</label>
+                <input type="text" id="editDni" name="dni" required />
+    
+                <label for="editJob">Profesión:</label>
+                <input type="text" id="editJob" name="job" required />
+    
+                <label for="editDir">Dirección:</label>
+                <input type="text" id="editDir" name="dir" required />
+    
+                <label for="editTlfn">Teléfono:</label>
+                <input type="text" id="editTlfn" name="tlfn" required />
+    
+                <button type="submit" class="bt-modal">Guardar cambios</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESO</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+</head>
+<body>
+    <section>
+        <form class="form" action="./php/functions/login.php" method="post">
+            <p id="title">Inicio de sesión</p>
+            <label for="username">Username:</label>
+            <div class="campo">
+                <input type="text" class="campo-input" id="username" name="username" autocomplete="off">
+            </div>
+            <label for="password">Password:</label>
+            <div class="campo">
+                <input type="password" class="campo-input" id="password" name="password" autocomplete="off">
+                <button type="button" id="bt-password">
+                    <img id="icon-password" src="./assets/icons/show.png" alt="Mostrar contraseña" width="20" height="20">
+                </button>
+            </div>
+            <div class="btn">
+                <input type="submit" class="boton" value="ENVIAR">
+            </div>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
